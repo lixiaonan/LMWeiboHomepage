@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12120" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="CommonHeaderView">
+            <rect key="frame" x="0.0" y="0.0" width="345" height="251"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="K0J-xb-jQ9" userLabel="Top">
+                    <rect key="frame" x="0.0" y="0.0" width="345" height="211"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="timg (1)" translatesAutoresizingMaskIntoConstraints="NO" id="bzP-fq-k6h">
+                            <rect key="frame" x="0.0" y="-149" width="345" height="360"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="360" id="UdW-vZ-XxU"/>
+                            </constraints>
+                        </imageView>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="111111" translatesAutoresizingMaskIntoConstraints="NO" id="SHN-6D-yVu">
+                            <rect key="frame" x="135" y="50" width="75" height="75"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="75" id="Ch1-ha-726"/>
+                                <constraint firstAttribute="height" constant="75" id="eln-C1-91L"/>
+                            </constraints>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="李小南" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0FO-V5-HiT">
+                            <rect key="frame" x="152.5" y="135" width="40" height="16"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                            <color key="textColor" red="0.98039215690000003" green="0.98039215690000003" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="简介：我是超级时尚师简介：我是超级时尚师简介：我是超级时尚师" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h69-HG-2ku">
+                            <rect key="frame" x="10" y="161" width="325" height="16"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                            <color key="textColor" red="0.98039215690000003" green="0.98039215690000003" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="j2Q-mz-PKD">
+                            <rect key="frame" x="239" y="90" width="51" height="31"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        </switch>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="SHN-6D-yVu" firstAttribute="top" secondItem="K0J-xb-jQ9" secondAttribute="top" constant="50" id="4Vo-We-TCE"/>
+                        <constraint firstItem="h69-HG-2ku" firstAttribute="top" secondItem="0FO-V5-HiT" secondAttribute="bottom" constant="10" id="7zg-2X-etm"/>
+                        <constraint firstItem="SHN-6D-yVu" firstAttribute="centerX" secondItem="K0J-xb-jQ9" secondAttribute="centerX" id="9DO-WT-IU9"/>
+                        <constraint firstAttribute="trailing" secondItem="bzP-fq-k6h" secondAttribute="trailing" id="9TT-Xr-9aw"/>
+                        <constraint firstItem="h69-HG-2ku" firstAttribute="centerX" secondItem="K0J-xb-jQ9" secondAttribute="centerX" id="ITA-vo-g5X"/>
+                        <constraint firstItem="h69-HG-2ku" firstAttribute="top" secondItem="K0J-xb-jQ9" secondAttribute="top" constant="10" id="RrQ-Nn-it9"/>
+                        <constraint firstItem="h69-HG-2ku" firstAttribute="leading" secondItem="K0J-xb-jQ9" secondAttribute="leading" constant="10" id="Tdy-kM-QGU"/>
+                        <constraint firstAttribute="trailing" secondItem="h69-HG-2ku" secondAttribute="trailing" constant="10" id="b4y-ym-Drc"/>
+                        <constraint firstItem="bzP-fq-k6h" firstAttribute="leading" secondItem="K0J-xb-jQ9" secondAttribute="leading" id="ggX-Yv-Rfg"/>
+                        <constraint firstItem="0FO-V5-HiT" firstAttribute="top" secondItem="SHN-6D-yVu" secondAttribute="bottom" constant="10" id="nAn-EU-KTA"/>
+                        <constraint firstItem="0FO-V5-HiT" firstAttribute="centerX" secondItem="K0J-xb-jQ9" secondAttribute="centerX" id="pEy-bN-UOu"/>
+                        <constraint firstAttribute="bottom" secondItem="bzP-fq-k6h" secondAttribute="bottom" id="rtg-W9-xWH"/>
+                    </constraints>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="ITA-vo-g5X"/>
+                            <exclude reference="RrQ-Nn-it9"/>
+                        </mask>
+                    </variation>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bKg-yV-XmF" customClass="HMSegmentedControl">
+                    <rect key="frame" x="0.0" y="211" width="345" height="40"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="FZl-67-xKv"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="bKg-yV-XmF" secondAttribute="trailing" id="3EI-qs-WB0"/>
+                <constraint firstItem="K0J-xb-jQ9" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="EH3-hM-1sY"/>
+                <constraint firstItem="bKg-yV-XmF" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="GQH-JR-r7R"/>
+                <constraint firstAttribute="trailing" secondItem="K0J-xb-jQ9" secondAttribute="trailing" id="JjX-nq-LJ1"/>
+                <constraint firstAttribute="bottom" secondItem="K0J-xb-jQ9" secondAttribute="bottom" id="Kxx-Ee-fKH"/>
+                <constraint firstAttribute="bottom" secondItem="bKg-yV-XmF" secondAttribute="bottom" id="LUr-zf-x99"/>
+                <constraint firstItem="bKg-yV-XmF" firstAttribute="top" secondItem="K0J-xb-jQ9" secondAttribute="bottom" id="SEK-ge-aTZ"/>
+                <constraint firstItem="K0J-xb-jQ9" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="sUr-TA-Psr"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="Kxx-Ee-fKH"/>
+                </mask>
+            </variation>
+            <connections>
+                <outlet property="segmentControl" destination="bKg-yV-XmF" id="CBY-Hb-qLa"/>
+            </connections>
+            <point key="canvasLocation" x="29" y="32"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="111111" width="300" height="300"/>
+        <image name="timg (1)" width="990" height="660"/>
+    </resources>
+</document>

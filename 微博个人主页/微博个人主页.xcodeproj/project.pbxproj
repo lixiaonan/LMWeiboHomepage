@@ -1,0 +1,375 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		00DE69051EF1183D00510019 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 00DE69041EF1183D00510019 /* main.m */; };
+		00DE69081EF1183D00510019 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 00DE69071EF1183D00510019 /* AppDelegate.m */; };
+		00DE690B1EF1183D00510019 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00DE690A1EF1183D00510019 /* ViewController.m */; };
+		00DE690E1EF1183D00510019 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 00DE690C1EF1183D00510019 /* Main.storyboard */; };
+		00DE69101EF1183D00510019 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 00DE690F1EF1183D00510019 /* Assets.xcassets */; };
+		00DE69131EF1183D00510019 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 00DE69111EF1183D00510019 /* LaunchScreen.storyboard */; };
+		00DE69371EF3AABF00510019 /* LMBaseTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00DE692E1EF3AABF00510019 /* LMBaseTableViewController.m */; };
+		00DE69381EF3AABF00510019 /* LMHomePageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00DE69301EF3AABF00510019 /* LMHomePageViewController.m */; };
+		00DE69391EF3AABF00510019 /* LMLeftTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00DE69321EF3AABF00510019 /* LMLeftTableViewController.m */; };
+		00DE693A1EF3AABF00510019 /* LMMiddleTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00DE69341EF3AABF00510019 /* LMMiddleTableViewController.m */; };
+		00DE693B1EF3AABF00510019 /* LMRightTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00DE69361EF3AABF00510019 /* LMRightTableViewController.m */; };
+		00DE693E1EF3AAE800510019 /* HMSegmentedControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 00DE693D1EF3AAE800510019 /* HMSegmentedControl.m */; };
+		00DE69421EF3AB2A00510019 /* CommonHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 00DE69401EF3AB2A00510019 /* CommonHeaderView.m */; };
+		00DE69431EF3AB2A00510019 /* CommonHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 00DE69411EF3AB2A00510019 /* CommonHeaderView.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		00DE69001EF1183D00510019 /* 微博个人主页.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "微博个人主页.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		00DE69041EF1183D00510019 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		00DE69061EF1183D00510019 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		00DE69071EF1183D00510019 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		00DE69091EF1183D00510019 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		00DE690A1EF1183D00510019 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		00DE690D1EF1183D00510019 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		00DE690F1EF1183D00510019 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		00DE69121EF1183D00510019 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		00DE69141EF1183D00510019 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		00DE692D1EF3AABF00510019 /* LMBaseTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LMBaseTableViewController.h; sourceTree = "<group>"; };
+		00DE692E1EF3AABF00510019 /* LMBaseTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LMBaseTableViewController.m; sourceTree = "<group>"; };
+		00DE692F1EF3AABF00510019 /* LMHomePageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LMHomePageViewController.h; sourceTree = "<group>"; };
+		00DE69301EF3AABF00510019 /* LMHomePageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LMHomePageViewController.m; sourceTree = "<group>"; };
+		00DE69311EF3AABF00510019 /* LMLeftTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LMLeftTableViewController.h; sourceTree = "<group>"; };
+		00DE69321EF3AABF00510019 /* LMLeftTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LMLeftTableViewController.m; sourceTree = "<group>"; };
+		00DE69331EF3AABF00510019 /* LMMiddleTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LMMiddleTableViewController.h; sourceTree = "<group>"; };
+		00DE69341EF3AABF00510019 /* LMMiddleTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LMMiddleTableViewController.m; sourceTree = "<group>"; };
+		00DE69351EF3AABF00510019 /* LMRightTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LMRightTableViewController.h; sourceTree = "<group>"; };
+		00DE69361EF3AABF00510019 /* LMRightTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LMRightTableViewController.m; sourceTree = "<group>"; };
+		00DE693C1EF3AAE800510019 /* HMSegmentedControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HMSegmentedControl.h; sourceTree = "<group>"; };
+		00DE693D1EF3AAE800510019 /* HMSegmentedControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HMSegmentedControl.m; sourceTree = "<group>"; };
+		00DE693F1EF3AB2A00510019 /* CommonHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommonHeaderView.h; sourceTree = "<group>"; };
+		00DE69401EF3AB2A00510019 /* CommonHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommonHeaderView.m; sourceTree = "<group>"; };
+		00DE69411EF3AB2A00510019 /* CommonHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CommonHeaderView.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		00DE68FD1EF1183D00510019 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		00DE68F71EF1183D00510019 = {
+			isa = PBXGroup;
+			children = (
+				00DE69021EF1183D00510019 /* 微博个人主页 */,
+				00DE69011EF1183D00510019 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		00DE69011EF1183D00510019 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				00DE69001EF1183D00510019 /* 微博个人主页.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		00DE69021EF1183D00510019 /* 微博个人主页 */ = {
+			isa = PBXGroup;
+			children = (
+				00DE69061EF1183D00510019 /* AppDelegate.h */,
+				00DE69071EF1183D00510019 /* AppDelegate.m */,
+				00DE69091EF1183D00510019 /* ViewController.h */,
+				00DE690A1EF1183D00510019 /* ViewController.m */,
+				00DE692C1EF3AABF00510019 /* 个人主页 */,
+				00DE690C1EF1183D00510019 /* Main.storyboard */,
+				00DE690F1EF1183D00510019 /* Assets.xcassets */,
+				00DE69111EF1183D00510019 /* LaunchScreen.storyboard */,
+				00DE69141EF1183D00510019 /* Info.plist */,
+				00DE69031EF1183D00510019 /* Supporting Files */,
+			);
+			path = "微博个人主页";
+			sourceTree = "<group>";
+		};
+		00DE69031EF1183D00510019 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				00DE69041EF1183D00510019 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		00DE692C1EF3AABF00510019 /* 个人主页 */ = {
+			isa = PBXGroup;
+			children = (
+				00DE692F1EF3AABF00510019 /* LMHomePageViewController.h */,
+				00DE69301EF3AABF00510019 /* LMHomePageViewController.m */,
+				00DE692D1EF3AABF00510019 /* LMBaseTableViewController.h */,
+				00DE692E1EF3AABF00510019 /* LMBaseTableViewController.m */,
+				00DE69311EF3AABF00510019 /* LMLeftTableViewController.h */,
+				00DE69321EF3AABF00510019 /* LMLeftTableViewController.m */,
+				00DE69331EF3AABF00510019 /* LMMiddleTableViewController.h */,
+				00DE69341EF3AABF00510019 /* LMMiddleTableViewController.m */,
+				00DE69351EF3AABF00510019 /* LMRightTableViewController.h */,
+				00DE69361EF3AABF00510019 /* LMRightTableViewController.m */,
+				00DE693C1EF3AAE800510019 /* HMSegmentedControl.h */,
+				00DE693D1EF3AAE800510019 /* HMSegmentedControl.m */,
+				00DE693F1EF3AB2A00510019 /* CommonHeaderView.h */,
+				00DE69401EF3AB2A00510019 /* CommonHeaderView.m */,
+				00DE69411EF3AB2A00510019 /* CommonHeaderView.xib */,
+			);
+			path = "个人主页";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		00DE68FF1EF1183D00510019 /* 微博个人主页 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 00DE69171EF1183D00510019 /* Build configuration list for PBXNativeTarget "微博个人主页" */;
+			buildPhases = (
+				00DE68FC1EF1183D00510019 /* Sources */,
+				00DE68FD1EF1183D00510019 /* Frameworks */,
+				00DE68FE1EF1183D00510019 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "微博个人主页";
+			productName = "微博个人主页";
+			productReference = 00DE69001EF1183D00510019 /* 微博个人主页.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		00DE68F81EF1183D00510019 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = LMIJKPlayer;
+				TargetAttributes = {
+					00DE68FF1EF1183D00510019 = {
+						CreatedOnToolsVersion = 8.3.2;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 00DE68FB1EF1183D00510019 /* Build configuration list for PBXProject "微博个人主页" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 00DE68F71EF1183D00510019;
+			productRefGroup = 00DE69011EF1183D00510019 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				00DE68FF1EF1183D00510019 /* 微博个人主页 */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		00DE68FE1EF1183D00510019 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				00DE69131EF1183D00510019 /* LaunchScreen.storyboard in Resources */,
+				00DE69101EF1183D00510019 /* Assets.xcassets in Resources */,
+				00DE69431EF3AB2A00510019 /* CommonHeaderView.xib in Resources */,
+				00DE690E1EF1183D00510019 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		00DE68FC1EF1183D00510019 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				00DE690B1EF1183D00510019 /* ViewController.m in Sources */,
+				00DE69391EF3AABF00510019 /* LMLeftTableViewController.m in Sources */,
+				00DE69381EF3AABF00510019 /* LMHomePageViewController.m in Sources */,
+				00DE69371EF3AABF00510019 /* LMBaseTableViewController.m in Sources */,
+				00DE69081EF1183D00510019 /* AppDelegate.m in Sources */,
+				00DE693B1EF3AABF00510019 /* LMRightTableViewController.m in Sources */,
+				00DE69421EF3AB2A00510019 /* CommonHeaderView.m in Sources */,
+				00DE693E1EF3AAE800510019 /* HMSegmentedControl.m in Sources */,
+				00DE69051EF1183D00510019 /* main.m in Sources */,
+				00DE693A1EF3AABF00510019 /* LMMiddleTableViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		00DE690C1EF1183D00510019 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				00DE690D1EF1183D00510019 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		00DE69111EF1183D00510019 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				00DE69121EF1183D00510019 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		00DE69151EF1183D00510019 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		00DE69161EF1183D00510019 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		00DE69181EF1183D00510019 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = "微博个人主页/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.person.1;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		00DE69191EF1183D00510019 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = "微博个人主页/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.person.1;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		00DE68FB1EF1183D00510019 /* Build configuration list for PBXProject "微博个人主页" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				00DE69151EF1183D00510019 /* Debug */,
+				00DE69161EF1183D00510019 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		00DE69171EF1183D00510019 /* Build configuration list for PBXNativeTarget "微博个人主页" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				00DE69181EF1183D00510019 /* Debug */,
+				00DE69191EF1183D00510019 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 00DE68F81EF1183D00510019 /* Project object */;
+}
