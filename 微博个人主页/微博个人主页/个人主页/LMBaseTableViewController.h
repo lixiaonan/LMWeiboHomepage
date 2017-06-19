@@ -29,6 +29,9 @@
 @interface LMBaseTableViewController : UITableViewController
 @property (nonatomic, weak) id<TableViewScrollingProtocol> delegate;
 
+/** isInit */
+@property (nonatomic, assign, readonly) BOOL isInit;
+
 /** 更新Y轴方向偏移量 */
 - (void)updateOffsetY:(CGFloat)offsetY;
 

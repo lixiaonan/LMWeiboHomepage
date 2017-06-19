@@ -156,6 +156,7 @@
 				TargetAttributes = {
 					00DE68FF1EF1183D00510019 = {
 						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = 37KQGBWBQ7;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -326,7 +327,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 37KQGBWBQ7;
 				INFOPLIST_FILE = "微博个人主页/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -339,7 +340,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 37KQGBWBQ7;
 				INFOPLIST_FILE = "微博个人主页/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

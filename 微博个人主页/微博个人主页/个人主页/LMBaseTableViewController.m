@@ -37,8 +37,6 @@
     headerView.backgroundColor = [UIColor whiteColor];
     self.tableView.tableHeaderView = headerView;
     
-    self.tableView.contentOffset = CGPointMake(self.tableView.contentOffset.x, self.offsetY);
-    
 }
 
 - (void)dealloc {

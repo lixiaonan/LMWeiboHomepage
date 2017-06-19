@@ -64,7 +64,7 @@
 
 #pragma mark - Private
 - (void)configNav {
-    self.navigationController.navigationBar.tintColor = [UIColor whiteColor];
+    self.navigationController.navigationBar.tintColor = [UIColor blueColor];
     
     UIView *navView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, kScreenWidth, 64)];
     navView.backgroundColor = [UIColor redColor];
@@ -166,15 +166,11 @@
 - (void)tableViewDidScroll:(UIScrollView *)scrollView {
     
     // 如果showing没有初始化, 那么就return
-    if (!self.showingVC.isViewLoaded) {
+    if (!self.showingVC.isInit) {
         return;
     }
     
     CGFloat offsetY = scrollView.contentOffset.y;
-    
-    // 去除tableview的的contenSize不足以滚动时的bug
-    if(offsetY == 0)
-        return;
     
     // 分页栏到达顶部时,固定分页栏
     if (offsetY >= headerImgHeight - topBarHeight) {
