@@ -43,7 +43,6 @@
     [self setupHeaderView];
     [self configNav];
     [self segmentedControlChangedValue:_segCtrl];
-    [self scrollViewDidEndScrollingAnimation:self.scrollview];
     
 }
 
@@ -126,7 +125,8 @@
 
 - (void)segmentedControlChangedValue:(HMSegmentedControl*)sender {
     
-    [self.scrollview setContentOffset:CGPointMake(self.view.frame.size.width *sender.selectedSegmentIndex, 0) animated:YES];
+    [self.scrollview setContentOffset:CGPointMake(self.view.frame.size.width *sender.selectedSegmentIndex, 0) animated:NO];
+    [self showChildVCViewsAtIndex:sender.selectedSegmentIndex];
 }
 
 /// 设置导航栏
@@ -231,6 +231,8 @@
     if (scrollView == self.scrollview) {
         LMBaseTableViewController *newVC = self.childViewControllers[_currentIndex];
         
+        [self updateChildVCOffsetY:newVC.tableView.contentOffset.y];
+        
         if ([_headerView.superview isEqual:newVC.tableView ]) {
             [self.view insertSubview:_headerView aboveSubview:self.scrollview];
         }
@@ -242,54 +244,55 @@
     }
 }
 
-- (void)scrollViewDidEndScrollingAnimation:(UIScrollView *)scrollView {
-    if (scrollView == self.scrollview) {
-        
-        self.showingVC.delegate = nil;
-        
-        
-        NSInteger index = scrollView.contentOffset.x/self.scrollview.frame.size.width;
-        _segCtrl.selectedSegmentIndex = index;
-        _currentIndex = index;
-        LMBaseTableViewController *vc = self.childViewControllers[index];
-        
-        
-        vc.delegate = self;
-        
-        
-        
-        vc.view.frame = CGRectMake(scrollView.contentOffset.x, 0, self.scrollview.frame.size.width, self.scrollview.frame.size.height);
-        
-        [self.scrollview insertSubview:vc.view belowSubview:self.navView];
-        
-        CGFloat offsetY = vc.tableView.contentOffset.y;
-        
-        if (offsetY <= headerImgHeight - topBarHeight) {
-            [vc.view addSubview:_headerView];
-            for (UIView *view in vc.view.subviews) {
-                if ([view isKindOfClass:[UIImageView class]]) {
-                    [vc.view insertSubview:_headerView belowSubview:view];
-                    break;
-                }
-            }
-            CGRect rect = self.headerView.frame;
-            rect.origin.y = 0;
-            self.headerView.frame = rect;
-            
-        }  else {
-            [self.view insertSubview:_headerView aboveSubview:self.scrollview];
-            CGRect rect = self.headerView.frame;
-            rect.origin.y = topBarHeight - headerImgHeight;
-            self.headerView.frame = rect;
-        }
-        _showingVC = vc;
+- (void)showChildVCViewsAtIndex:(NSInteger)index {
+    
+    if (self.childViewControllers.count == 0 || index < 0 || index > self.childViewControllers.count - 1) {
+        return;
     }
+    
+    self.showingVC.delegate = nil;
+    
+    _currentIndex = index;
+    LMBaseTableViewController *vc = self.childViewControllers[index];
+    
+    
+    vc.delegate = self;
+    
+    
+    
+    vc.view.frame = CGRectMake(self.view.frame.size.width * index, 0, self.scrollview.frame.size.width, self.scrollview.frame.size.height);
+    
+    [self.scrollview insertSubview:vc.view belowSubview:self.navView];
+    
+    CGFloat offsetY = vc.tableView.contentOffset.y;
+    
+    if (offsetY <= headerImgHeight - topBarHeight) {
+        [vc.view addSubview:_headerView];
+        for (UIView *view in vc.view.subviews) {
+            if ([view isKindOfClass:[UIImageView class]]) {
+                [vc.view insertSubview:_headerView belowSubview:view];
+                break;
+            }
+        }
+        CGRect rect = self.headerView.frame;
+        rect.origin.y = 0;
+        self.headerView.frame = rect;
+        
+    }  else {
+        [self.view insertSubview:_headerView aboveSubview:self.scrollview];
+        CGRect rect = self.headerView.frame;
+        rect.origin.y = topBarHeight - headerImgHeight;
+        self.headerView.frame = rect;
+    }
+    _showingVC = vc;
 }
 
 #pragma mark --UIScrollViewDelegate-- 滑动的减速动画结束后会调用这个方法
 - (void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView {
     if (scrollView == self.scrollview) {
-        [self scrollViewDidEndScrollingAnimation:scrollView];
+        NSInteger index = scrollView.contentOffset.x / self.view.frame.size.width;
+        [self.segCtrl setSelectedSegmentIndex:index animated:YES];;
+        [self showChildVCViewsAtIndex:index];
     }
 }
 
